@@ -11,9 +11,6 @@
 
 @interface FlipsideViewController : UIViewController {
 	IBOutlet UIImageView *miControlImagen;
-	id <FlipsideViewControllerDelegate> delegate;
-	NSString *nombreDibujo;
-
 }
 
 @property (assign) NSString* nombreDibujo;

@@ -53,15 +53,11 @@
 	
 	NSLog(cadenaAux);  // lo volcamos al log por si acaso
 	
-	[controller.nombreDibujo release];  // limpiamos la memoria del objeto anterior
-	
 	controller.nombreDibujo = cadenaAux;  // asignamos memoria al objeto nuevo
 	
 	
 	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 	[self presentModalViewController:controller animated:YES];
-	
-	[controller release];
 }
 
 
@@ -80,16 +76,5 @@
 	
 	// Release any cached data, images, etc that aren't in use.
 }
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 @end

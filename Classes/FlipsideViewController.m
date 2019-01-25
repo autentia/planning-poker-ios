@@ -20,9 +20,7 @@
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];   
 	
 	UIImage* anterior = miControlImagen.image;					// cogemos referencia a imagen anterior
-	miControlImagen.image = [UIImage imageNamed:nombreDibujo];	// creamos la nueva 
-	[anterior release]; // vemos el valor la segunda vez		// liberamos anterior
-	
+	miControlImagen.image = [UIImage imageNamed:nombreDibujo];	// creamos la nueva
 }
 
 
@@ -45,16 +43,5 @@
 	
 	// Release any cached data, images, etc that aren't in use.
 }
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 @end

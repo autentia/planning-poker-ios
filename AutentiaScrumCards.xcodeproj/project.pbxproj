@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m */; };
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
@@ -20,6 +19,7 @@
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
 		4480A88721FB3F4600071136 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88621FB3F4600071136 /* Default-568h@2x.png */; };
+		4480A88921FB488000071136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480A88821FB488000071136 /* main.m */; };
 		4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4D543DDC18EF2CD2001A7DF7 /* LICENSE */; };
 		50A4FC9E111E273B00EC7F6F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FC9C111E273B00EC7F6F /* Default.png */; };
 		50A4FC9F111E273B00EC7F6F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FC9D111E273B00EC7F6F /* icon.png */; };
@@ -57,9 +57,10 @@
 		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideViewController.h; path = Classes/FlipsideViewController.h; sourceTree = "<group>"; };
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutentiaScrumCards_Prefix.pch; sourceTree = "<group>"; };
 		4480A88621FB3F4600071136 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4480A88821FB488000071136 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../.Trash/main.m; sourceTree = "<group>"; };
+		4480A88A21FB491D00071136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../.Trash/main.m; sourceTree = "<group>"; };
 		4D543DDC18EF2CD2001A7DF7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		50A4FC9C111E273B00EC7F6F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50A4FC9D111E273B00EC7F6F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -152,8 +153,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4480A88A21FB491D00071136 /* main.m */,
 				32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -161,6 +162,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4480A88821FB488000071136 /* main.m */,
 				50A4FCA2111E27FD00EC7F6F /* carta_0_cc.jpg */,
 				50A4FCA3111E27FD00EC7F6F /* carta_0,5_cc.jpg */,
 				50A4FCA4111E27FD00EC7F6F /* carta_1_cc.jpg */,
@@ -280,11 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m in Sources */,
 				289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */,
 				289233A70DB2D0840083E9F9 /* MainView.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
+				4480A88921FB488000071136 /* main.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -364,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
