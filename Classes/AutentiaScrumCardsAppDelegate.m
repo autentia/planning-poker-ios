@@ -20,6 +20,7 @@
     
 	MainViewController *aController = [[MainViewController alloc] initWithNibName:@"MainView" bundle:nil];
 	self.mainViewController = aController;
+    self.window.rootViewController = self.mainViewController;
 	[aController release];
 	
     mainViewController.view.frame = [UIScreen mainScreen].applicationFrame;
