@@ -21,12 +21,13 @@
 }
 
 
-/*
+
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
  - (void)viewDidLoad {
- [super viewDidLoad];
+     [super viewDidLoad];
+     
  }
- */
+
 
 
 /*
@@ -40,7 +41,7 @@
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -51,13 +52,11 @@
 	
 	NSString* cadenaAux = [NSString stringWithFormat:@"carta_%@_cc.jpg",sender.currentTitle];  // formateamos el nombre de la propiedad
 	
-	NSLog(cadenaAux);  // lo volcamos al log por si acaso
+    NSLog(@"%@", cadenaAux);  // lo volcamos al log por si acaso
 	
 	controller.nombreDibujo = cadenaAux;  // asignamos memoria al objeto nuevo
-	
-	
 	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-	[self presentModalViewController:controller animated:YES];
+	[self presentViewController:controller animated:YES completion:nil];
 }
 
 

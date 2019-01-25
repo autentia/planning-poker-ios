@@ -11,16 +11,10 @@
 
 @implementation FlipsideViewController
 
-@synthesize delegate;
-@synthesize nombreDibujo;   // añadimos anotación para getter y setters automáticos
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];   
-	
-	UIImage* anterior = miControlImagen.image;					// cogemos referencia a imagen anterior
-	miControlImagen.image = [UIImage imageNamed:nombreDibujo];	// creamos la nueva
+    //self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];   
+	miControlImagen.image = [UIImage imageNamed:self.nombreDibujo];	// creamos la nueva
 }
 
 

@@ -20,22 +20,10 @@
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
 		4480A88721FB3F4600071136 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88621FB3F4600071136 /* Default-568h@2x.png */; };
 		4480A88921FB488000071136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480A88821FB488000071136 /* main.m */; };
+		4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88B21FB4E6C00071136 /* Media.xcassets */; };
+		4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88D21FB4F0B00071136 /* Icons.xcassets */; };
 		4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4D543DDC18EF2CD2001A7DF7 /* LICENSE */; };
 		50A4FC9E111E273B00EC7F6F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FC9C111E273B00EC7F6F /* Default.png */; };
-		50A4FC9F111E273B00EC7F6F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FC9D111E273B00EC7F6F /* icon.png */; };
-		50A4FCB1111E27FD00EC7F6F /* carta_0_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA2111E27FD00EC7F6F /* carta_0_cc.jpg */; };
-		50A4FCB2111E27FD00EC7F6F /* carta_0,5_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA3111E27FD00EC7F6F /* carta_0,5_cc.jpg */; };
-		50A4FCB3111E27FD00EC7F6F /* carta_1_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA4111E27FD00EC7F6F /* carta_1_cc.jpg */; };
-		50A4FCB4111E27FD00EC7F6F /* carta_2_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA5111E27FD00EC7F6F /* carta_2_cc.jpg */; };
-		50A4FCB5111E27FD00EC7F6F /* carta_3_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA6111E27FD00EC7F6F /* carta_3_cc.jpg */; };
-		50A4FCB6111E27FD00EC7F6F /* carta_5_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA7111E27FD00EC7F6F /* carta_5_cc.jpg */; };
-		50A4FCB7111E27FD00EC7F6F /* carta_8_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA8111E27FD00EC7F6F /* carta_8_cc.jpg */; };
-		50A4FCB8111E27FD00EC7F6F /* carta_13_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCA9111E27FD00EC7F6F /* carta_13_cc.jpg */; };
-		50A4FCB9111E27FD00EC7F6F /* carta_20_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCAA111E27FD00EC7F6F /* carta_20_cc.jpg */; };
-		50A4FCBA111E27FD00EC7F6F /* carta_40_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCAB111E27FD00EC7F6F /* carta_40_cc.jpg */; };
-		50A4FCBB111E27FD00EC7F6F /* carta_100_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCAC111E27FD00EC7F6F /* carta_100_cc.jpg */; };
-		50A4FCBC111E27FD00EC7F6F /* carta_?_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCAD111E27FD00EC7F6F /* carta_?_cc.jpg */; };
-		50A4FCBD111E27FD00EC7F6F /* carta_¿Descansamos?_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCAE111E27FD00EC7F6F /* carta_¿Descansamos?_cc.jpg */; };
 		50A4FCBF111E27FD00EC7F6F /* reverso_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCB0111E27FD00EC7F6F /* reverso_cc.jpg */; };
 /* End PBXBuildFile section */
 
@@ -61,22 +49,10 @@
 		4480A88621FB3F4600071136 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4480A88821FB488000071136 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../.Trash/main.m; sourceTree = "<group>"; };
 		4480A88A21FB491D00071136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../.Trash/main.m; sourceTree = "<group>"; };
+		4480A88B21FB4E6C00071136 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4480A88D21FB4F0B00071136 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		4D543DDC18EF2CD2001A7DF7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		50A4FC9C111E273B00EC7F6F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		50A4FC9D111E273B00EC7F6F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		50A4FCA2111E27FD00EC7F6F /* carta_0_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_0_cc.jpg; sourceTree = "<group>"; };
-		50A4FCA3111E27FD00EC7F6F /* carta_0,5_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "carta_0,5_cc.jpg"; sourceTree = "<group>"; };
-		50A4FCA4111E27FD00EC7F6F /* carta_1_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_1_cc.jpg; sourceTree = "<group>"; };
-		50A4FCA5111E27FD00EC7F6F /* carta_2_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_2_cc.jpg; sourceTree = "<group>"; };
-		50A4FCA6111E27FD00EC7F6F /* carta_3_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_3_cc.jpg; sourceTree = "<group>"; };
-		50A4FCA7111E27FD00EC7F6F /* carta_5_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_5_cc.jpg; sourceTree = "<group>"; };
-		50A4FCA8111E27FD00EC7F6F /* carta_8_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_8_cc.jpg; sourceTree = "<group>"; };
-		50A4FCA9111E27FD00EC7F6F /* carta_13_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_13_cc.jpg; sourceTree = "<group>"; };
-		50A4FCAA111E27FD00EC7F6F /* carta_20_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_20_cc.jpg; sourceTree = "<group>"; };
-		50A4FCAB111E27FD00EC7F6F /* carta_40_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_40_cc.jpg; sourceTree = "<group>"; };
-		50A4FCAC111E27FD00EC7F6F /* carta_100_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carta_100_cc.jpg; sourceTree = "<group>"; };
-		50A4FCAD111E27FD00EC7F6F /* carta_?_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "carta_?_cc.jpg"; sourceTree = "<group>"; };
-		50A4FCAE111E27FD00EC7F6F /* carta_¿Descansamos?_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "carta_¿Descansamos?_cc.jpg"; sourceTree = "<group>"; };
 		50A4FCB0111E27FD00EC7F6F /* reverso_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reverso_cc.jpg; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AutentiaScrumCards-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AutentiaScrumCards-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,27 +139,15 @@
 			isa = PBXGroup;
 			children = (
 				4480A88821FB488000071136 /* main.m */,
-				50A4FCA2111E27FD00EC7F6F /* carta_0_cc.jpg */,
-				50A4FCA3111E27FD00EC7F6F /* carta_0,5_cc.jpg */,
-				50A4FCA4111E27FD00EC7F6F /* carta_1_cc.jpg */,
-				50A4FCA5111E27FD00EC7F6F /* carta_2_cc.jpg */,
-				50A4FCA6111E27FD00EC7F6F /* carta_3_cc.jpg */,
-				50A4FCA7111E27FD00EC7F6F /* carta_5_cc.jpg */,
-				50A4FCA8111E27FD00EC7F6F /* carta_8_cc.jpg */,
-				50A4FCA9111E27FD00EC7F6F /* carta_13_cc.jpg */,
-				50A4FCAA111E27FD00EC7F6F /* carta_20_cc.jpg */,
 				4D543DDC18EF2CD2001A7DF7 /* LICENSE */,
-				50A4FCAB111E27FD00EC7F6F /* carta_40_cc.jpg */,
-				50A4FCAC111E27FD00EC7F6F /* carta_100_cc.jpg */,
-				50A4FCAD111E27FD00EC7F6F /* carta_?_cc.jpg */,
-				50A4FCAE111E27FD00EC7F6F /* carta_¿Descansamos?_cc.jpg */,
 				50A4FCB0111E27FD00EC7F6F /* reverso_cc.jpg */,
 				50A4FC9C111E273B00EC7F6F /* Default.png */,
-				50A4FC9D111E273B00EC7F6F /* icon.png */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* AutentiaScrumCards-Info.plist */,
+				4480A88D21FB4F0B00071136 /* Icons.xcassets */,
+				4480A88B21FB4E6C00071136 /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -255,22 +219,10 @@
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				50A4FC9E111E273B00EC7F6F /* Default.png in Resources */,
-				50A4FC9F111E273B00EC7F6F /* icon.png in Resources */,
+				4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */,
 				4480A88721FB3F4600071136 /* Default-568h@2x.png in Resources */,
-				50A4FCB1111E27FD00EC7F6F /* carta_0_cc.jpg in Resources */,
-				50A4FCB2111E27FD00EC7F6F /* carta_0,5_cc.jpg in Resources */,
-				50A4FCB3111E27FD00EC7F6F /* carta_1_cc.jpg in Resources */,
-				50A4FCB4111E27FD00EC7F6F /* carta_2_cc.jpg in Resources */,
-				50A4FCB5111E27FD00EC7F6F /* carta_3_cc.jpg in Resources */,
-				50A4FCB6111E27FD00EC7F6F /* carta_5_cc.jpg in Resources */,
-				50A4FCB7111E27FD00EC7F6F /* carta_8_cc.jpg in Resources */,
-				50A4FCB8111E27FD00EC7F6F /* carta_13_cc.jpg in Resources */,
-				50A4FCB9111E27FD00EC7F6F /* carta_20_cc.jpg in Resources */,
 				4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */,
-				50A4FCBA111E27FD00EC7F6F /* carta_40_cc.jpg in Resources */,
-				50A4FCBB111E27FD00EC7F6F /* carta_100_cc.jpg in Resources */,
-				50A4FCBC111E27FD00EC7F6F /* carta_?_cc.jpg in Resources */,
-				50A4FCBD111E27FD00EC7F6F /* carta_¿Descansamos?_cc.jpg in Resources */,
+				4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */,
 				50A4FCBF111E27FD00EC7F6F /* reverso_cc.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +250,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -314,6 +268,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
