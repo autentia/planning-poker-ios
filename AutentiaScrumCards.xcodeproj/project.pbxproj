@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
-		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
-		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
-		289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A30DB2D0840083E9F9 /* FlipsideView.m */; };
-		289233A70DB2D0840083E9F9 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A50DB2D0840083E9F9 /* MainView.m */; };
-		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
-		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		4480A88721FB3F4600071136 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88621FB3F4600071136 /* Default-568h@2x.png */; };
-		4480A88921FB488000071136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480A88821FB488000071136 /* main.m */; };
+		4446EBF721FF1DEE00B6C52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EBF621FF1DED00B6C52F /* AppDelegate.swift */; };
+		4446EBF921FF22D400B6C52F /* MainLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBF821FF22D400B6C52F /* MainLaunchScreen.storyboard */; };
+		4446EBFB21FF25EF00B6C52F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBFA21FF25EF00B6C52F /* Montserrat-Regular.ttf */; };
+		4446EBFD21FF268800B6C52F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */; };
+		4446EC0021FF2A1E00B6C52F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EBFF21FF2A1E00B6C52F /* Card.swift */; };
+		4446EC0521FF2BF700B6C52F /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */; };
 		4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88B21FB4E6C00071136 /* Media.xcassets */; };
 		4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88D21FB4F0B00071136 /* Icons.xcassets */; };
+		4480A89221FB5CDE00071136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4480A89121FB5CDE00071136 /* Main.storyboard */; };
+		4480A8BA21FB6DE100071136 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8B921FB6DE100071136 /* MainViewController.swift */; };
+		4480A8BD21FB6F9B00071136 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8BC21FB6F9B00071136 /* CardCell.swift */; };
+		4480A8BF21FF022900071136 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8BE21FF022900071136 /* CardViewController.swift */; };
 		4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4D543DDC18EF2CD2001A7DF7 /* LICENSE */; };
 		50A4FC9E111E273B00EC7F6F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FC9C111E273B00EC7F6F /* Default.png */; };
 		50A4FCBF111E27FD00EC7F6F /* reverso_cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A4FCB0111E27FD00EC7F6F /* reverso_cc.jpg */; };
@@ -29,28 +29,23 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* AutentiaScrumCardsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutentiaScrumCardsAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutentiaScrumCardsAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* AutentiaScrumCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutentiaScrumCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
-		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		289233A20DB2D0840083E9F9 /* FlipsideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideView.h; path = Classes/FlipsideView.h; sourceTree = "<group>"; };
-		289233A30DB2D0840083E9F9 /* FlipsideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideView.m; path = Classes/FlipsideView.m; sourceTree = "<group>"; };
-		289233A40DB2D0840083E9F9 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = Classes/MainView.h; sourceTree = "<group>"; };
-		289233A50DB2D0840083E9F9 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainView.m; path = Classes/MainView.m; sourceTree = "<group>"; };
-		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
-		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
-		289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideViewController.h; path = Classes/FlipsideViewController.h; sourceTree = "<group>"; };
-		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutentiaScrumCards_Prefix.pch; sourceTree = "<group>"; };
-		4480A88621FB3F4600071136 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4480A88821FB488000071136 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../.Trash/main.m; sourceTree = "<group>"; };
-		4480A88A21FB491D00071136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../.Trash/main.m; sourceTree = "<group>"; };
+		4446EBF621FF1DED00B6C52F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4446EBF821FF22D400B6C52F /* MainLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLaunchScreen.storyboard; sourceTree = "<group>"; };
+		4446EBFA21FF25EF00B6C52F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		4446EBFF21FF2A1E00B6C52F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		4480A88B21FB4E6C00071136 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4480A88D21FB4F0B00071136 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		4480A89121FB5CDE00071136 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4480A89321FB681600071136 /* AutentiaScrumCards-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutentiaScrumCards-Bridging-Header.h"; sourceTree = "<group>"; };
+		4480A8B921FB6DE100071136 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4480A8BC21FB6F9B00071136 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4480A8BE21FF022900071136 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		4D543DDC18EF2CD2001A7DF7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		50A4FC9C111E273B00EC7F6F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50A4FCB0111E27FD00EC7F6F /* reverso_cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reverso_cc.jpg; sourceTree = "<group>"; };
@@ -74,8 +69,7 @@
 		080E96DDFE201D6D7F000001 /* Application Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* AutentiaScrumCardsAppDelegate.h */,
-				1D3623250D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m */,
+				4446EBF621FF1DED00B6C52F /* AppDelegate.swift */,
 			);
 			name = "Application Delegate";
 			path = Classes;
@@ -92,31 +86,28 @@
 		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
 			isa = PBXGroup;
 			children = (
-				289233A20DB2D0840083E9F9 /* FlipsideView.h */,
-				289233A30DB2D0840083E9F9 /* FlipsideView.m */,
-				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
-				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				4480A8BE21FF022900071136 /* CardViewController.swift */,
 			);
 			name = "Flipside View";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		289233A00DB2D0730083E9F9 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				289233A40DB2D0840083E9F9 /* MainView.h */,
-				289233A50DB2D0840083E9F9 /* MainView.m */,
-				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
-				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+				4480A8BC21FB6F9B00071136 /* CardCell.swift */,
+				4480A8B921FB6DE100071136 /* MainViewController.swift */,
 			);
 			name = "Main View";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				4480A88621FB3F4600071136 /* Default-568h@2x.png */,
-				289233A00DB2D0730083E9F9 /* Main View */,
-				281C6CD70DB2D82200F60ACC /* Flipside View */,
+				4446EBFE21FF29F800B6C52F /* Model */,
+				4446EC0221FF2BB700B6C52F /* ViewModel */,
+				4446EC0321FF2BC700B6C52F /* View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -129,7 +120,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4480A88A21FB491D00071136 /* main.m */,
 				32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */,
 			);
 			name = "Other Sources";
@@ -138,14 +128,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4480A88821FB488000071136 /* main.m */,
+				4446EBFA21FF25EF00B6C52F /* Montserrat-Regular.ttf */,
+				4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */,
 				4D543DDC18EF2CD2001A7DF7 /* LICENSE */,
 				50A4FCB0111E27FD00EC7F6F /* reverso_cc.jpg */,
 				50A4FC9C111E273B00EC7F6F /* Default.png */,
-				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
-				280E754B0DD40C5E005A515E /* MainView.xib */,
-				280E754C0DD40C5E005A515E /* MainWindow.xib */,
+				4480A89321FB681600071136 /* AutentiaScrumCards-Bridging-Header.h */,
 				8D1107310486CEB800E47090 /* AutentiaScrumCards-Info.plist */,
+				4480A89121FB5CDE00071136 /* Main.storyboard */,
+				4446EBF821FF22D400B6C52F /* MainLaunchScreen.storyboard */,
 				4480A88D21FB4F0B00071136 /* Icons.xcassets */,
 				4480A88B21FB4E6C00071136 /* Media.xcassets */,
 			);
@@ -160,6 +151,31 @@
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4446EBFE21FF29F800B6C52F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4446EBFF21FF2A1E00B6C52F /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4446EC0221FF2BB700B6C52F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4446EC0321FF2BC700B6C52F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				289233A00DB2D0730083E9F9 /* Main View */,
+				281C6CD70DB2D82200F60ACC /* Flipside View */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +205,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AutentiaScrumCards" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -215,14 +236,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
-				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
-				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+				4446EBFB21FF25EF00B6C52F /* Montserrat-Regular.ttf in Resources */,
+				4480A89221FB5CDE00071136 /* Main.storyboard in Resources */,
 				50A4FC9E111E273B00EC7F6F /* Default.png in Resources */,
 				4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */,
-				4480A88721FB3F4600071136 /* Default-568h@2x.png in Resources */,
 				4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */,
 				4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */,
+				4446EBFD21FF268800B6C52F /* Montserrat-SemiBold.ttf in Resources */,
+				4446EBF921FF22D400B6C52F /* MainLaunchScreen.storyboard in Resources */,
 				50A4FCBF111E27FD00EC7F6F /* reverso_cc.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,12 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3623260D0F684500981E51 /* AutentiaScrumCardsAppDelegate.m in Sources */,
-				289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */,
-				289233A70DB2D0840083E9F9 /* MainView.m in Sources */,
-				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
-				4480A88921FB488000071136 /* main.m in Sources */,
-				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
+				4446EBF721FF1DEE00B6C52F /* AppDelegate.swift in Sources */,
+				4480A8BD21FB6F9B00071136 /* CardCell.swift in Sources */,
+				4446EC0021FF2A1E00B6C52F /* Card.swift in Sources */,
+				4480A8BF21FF022900071136 /* CardViewController.swift in Sources */,
+				4446EC0521FF2BF700B6C52F /* CardsViewModel.swift in Sources */,
+				4480A8BA21FB6DE100071136 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +272,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -259,8 +280,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AutentiaScrumCards_Prefix.pch;
 				INFOPLIST_FILE = "AutentiaScrumCards-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AutentiaScrumCards;
+				SWIFT_OBJC_BRIDGING_HEADER = "AutentiaScrumCards-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -269,14 +295,18 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AutentiaScrumCards_Prefix.pch;
 				INFOPLIST_FILE = "AutentiaScrumCards-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AutentiaScrumCards;
+				SWIFT_OBJC_BRIDGING_HEADER = "AutentiaScrumCards-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
