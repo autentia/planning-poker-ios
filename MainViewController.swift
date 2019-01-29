@@ -64,7 +64,8 @@ extension MainViewController: UICollectionViewDataSource {
 //    func collectionView(_ collectionView: UICollectionView,
 //                        layout collectionViewLayout: UICollectionViewLayout,
 //                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 90, height: 90)
+//        //let cellSize = collectionViewLayout.
+//        return CGSize(width: cellSize, height: cellSize)
 //    }
 //}
 

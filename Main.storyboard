@@ -175,11 +175,10 @@
                                     <rect key="frame" x="0.0" y="100" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afE-wu-Hvf">
+                                        <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afE-wu-Hvf">
                                             <rect key="frame" x="197.66666666666663" y="10" width="152.33333333333337" height="60"/>
                                             <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
-                                            <state key="normal" title="⏳">
+                                            <state key="normal" image="watch">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -188,19 +187,21 @@
                                                 <userDefinedRuntimeAttribute type="number" keyPath="self.cornerRadius">
                                                     <integer key="value" value="8"/>
                                                 </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="openTooMuchTimeCard:" destination="Smc-aP-mm9" eventType="touchUpInside" id="Q8D-bi-2mh"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWP-UV-gcM">
+                                        <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWP-UV-gcM">
                                             <rect key="frame" x="25" y="10" width="152.66666666666666" height="60"/>
                                             <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="WDr-aY-N7r"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
-                                            <state key="normal" title="☕️">
+                                            <state key="normal" image="cup">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -208,6 +209,9 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="self.cornerRadius">
                                                     <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                                    <integer key="value" value="1"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -312,6 +316,10 @@
             <point key="canvasLocation" x="1114.4000000000001" y="-169.21182266009853"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cup" width="128" height="202"/>
+        <image name="watch" width="128" height="202"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R6F-DH-jHh"/>
     </inferredMetricsTieBreakers>
