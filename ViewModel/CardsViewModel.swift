@@ -23,6 +23,10 @@ class CardsViewModel: NSObject {
         return "restCard"
     }
     
+    func getTooMuchTimeCardImageName() -> String {
+        return "tooMuchTime"
+    }
+    
     func getNumberOfCards()->Int {
         return self.allCards.count
     }
