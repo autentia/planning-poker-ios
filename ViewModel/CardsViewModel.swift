@@ -19,6 +19,10 @@ class CardsViewModel: NSObject {
         return "carta_\(self.allCards[index].name)_cc"
     }
     
+    func getRestCardImageName() -> String {
+        return "carta_¿Descansamos?_cc"
+    }
+    
     func getNumberOfCards()->Int {
         return self.allCards.count
     }

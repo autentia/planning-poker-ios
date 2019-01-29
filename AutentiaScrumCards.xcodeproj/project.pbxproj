@@ -16,6 +16,7 @@
 		4446EBFD21FF268800B6C52F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */; };
 		4446EC0021FF2A1E00B6C52F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EBFF21FF2A1E00B6C52F /* Card.swift */; };
 		4446EC0521FF2BF700B6C52F /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */; };
+		4446EC0721FF64CA00B6C52F /* RestButtonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC0621FF64CA00B6C52F /* RestButtonHeader.swift */; };
 		4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88B21FB4E6C00071136 /* Media.xcassets */; };
 		4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88D21FB4F0B00071136 /* Icons.xcassets */; };
 		4480A89221FB5CDE00071136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4480A89121FB5CDE00071136 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		4446EBFF21FF2A1E00B6C52F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		4446EC0621FF64CA00B6C52F /* RestButtonHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestButtonHeader.swift; path = View/RestButtonHeader.swift; sourceTree = "<group>"; };
 		4480A88B21FB4E6C00071136 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4480A88D21FB4F0B00071136 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		4480A89121FB5CDE00071136 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				4480A8BC21FB6F9B00071136 /* CardCell.swift */,
 				4480A8B921FB6DE100071136 /* MainViewController.swift */,
+				4446EC0621FF64CA00B6C52F /* RestButtonHeader.swift */,
 			);
 			name = "Main View";
 			path = ..;
@@ -261,6 +264,7 @@
 				4480A8BF21FF022900071136 /* CardViewController.swift in Sources */,
 				4446EC0521FF2BF700B6C52F /* CardsViewModel.swift in Sources */,
 				4480A8BA21FB6DE100071136 /* MainViewController.swift in Sources */,
+				4446EC0721FF64CA00B6C52F /* RestButtonHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -381,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 			};
 			name = Release;

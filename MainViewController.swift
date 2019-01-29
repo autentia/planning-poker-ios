@@ -7,8 +7,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+protocol CardCellPressedProtocol {
+    func cardCellPressed(cell:CardCell)
+}
 
+class MainViewController: UIViewController {
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -16,7 +20,26 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    func setShadow(view:UIView?) {
+        view?.layer.shadowColor = UIColor.white.cgColor
+        view?.layer.shadowOffset = CGSize(width: 1.0, height: 3.0)
+        view?.layer.shadowRadius = 4.0
+        view?.layer.shadowOpacity = 0.6
+        view?.layer.cornerRadius = 5.0
+        view?.layer.masksToBounds = false
+    }
+    
+    @IBAction func openRestCard(_ sender: Any) {
+        let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cardViewController") as! CardViewController
+        cardViewController.cardImage = UIImage.init(named: modelView.getRestCardImageName())
+        cardViewController.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+        self.present(cardViewController, animated: true, completion: nil)
     }
 }
 
@@ -28,37 +51,36 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Card", for: indexPath) as! CardCell
-        cell.layer.shadowColor = UIColor.white.cgColor
-        cell.layer.shadowOffset = CGSize(width: 1.0, height: 3.0)
-        cell.layer.shadowRadius = 4.0
-        cell.layer.shadowOpacity = 0.6
-        cell.layer.cornerRadius = 5.0
-        cell.layer.masksToBounds = false
+        cell.delegate = self
+        self.setShadow(view: cell)
         cell.cardCellButton.setTitle(modelView.getName(at: indexPath.row), for: UIControl.State.normal)
         return cell
     }
-}
-
-extension MainViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cardViewController") as! CardViewController
-        cardViewController.cardImage = UIImage(named: self.modelView.getImageName(at: indexPath.row))
-        cardViewController.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
-        self.present(cardViewController, animated: true, completion: nil)
-    }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let restButtonHeader: RestButtonHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "restButtonHeader", for: indexPath) as! RestButtonHeader
+        // configure footer view
+        self.setShadow(view: restButtonHeader.restButton)
+        return restButtonHeader
+    }
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        switch (modelView.getName(at: indexPath.row)) {
-        case "¿Descansamos?":
-            return CGSize(width: 240, height: 80)
-        default:
-            return CGSize(width: 80, height: 80)
+        return CGSize(width: 80, height: 80)
+    }
+}
+
+extension MainViewController: CardCellPressedProtocol{
+    
+    func cardCellPressed(cell: CardCell) {
+        if let cellIndexPath = self.collectionView.indexPath(for: cell){
+            let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cardViewController") as! CardViewController
+            cardViewController.cardImage = UIImage(named: self.modelView.getImageName(at: (cellIndexPath.row)))
+            cardViewController.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+            self.present(cardViewController, animated: true, completion: nil)
         }
     }
-    
 }
