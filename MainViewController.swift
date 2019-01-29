@@ -16,22 +16,18 @@ class MainViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let modelView = CardsViewModel(cards: standardCards)
+    let modelView = CardsViewModel(cards: numericCards)
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     func setShadow(view:UIView?) {
-        view?.layer.shadowColor = UIColor.white.cgColor
-        view?.layer.shadowOffset = CGSize(width: 1.0, height: 3.0)
-        view?.layer.shadowRadius = 4.0
-        view?.layer.shadowOpacity = 0.6
-        view?.layer.cornerRadius = 5.0
+        //view?.layer.shadowColor = UIColor.black.cgColor
+//        view?.layer.shadowOffset = CGSize(width: 1.0, height: 3.0)
+//        view?.layer.shadowRadius = 4.0
+//        view?.layer.shadowOpacity = 0.6
+        view?.layer.cornerRadius = 8.0
         view?.layer.masksToBounds = false
     }
     
@@ -52,7 +48,7 @@ extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Card", for: indexPath) as! CardCell
         cell.delegate = self
-        self.setShadow(view: cell)
+        self.setShadow(view: cell.cardCellButton)
         cell.cardCellButton.setTitle(modelView.getName(at: indexPath.row), for: UIControl.State.normal)
         return cell
     }
@@ -69,7 +65,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 80, height: 80)
+        return CGSize(width: 90, height: 90)
     }
 }
 

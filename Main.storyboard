@@ -4,17 +4,22 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
         </array>
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -26,27 +31,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cartas Scrum de Autentia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5F-ij-mbF">
-                                <rect key="frame" x="78.000000000000014" y="72" width="219.33333333333337" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="WCT-ly-YeY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7OM-j6-og2">
-                                <rect key="frame" x="0.0" y="123" width="375" height="625"/>
-                                <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DbH-QO-Hxp">
+                                <rect key="frame" x="0.0" y="120" width="375" height="658"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="15" id="DbH-QO-Hxp">
                                     <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="375" height="80"/>
-                                    <inset key="sectionInset" minX="10" minY="5" maxX="10" maxY="5"/>
+                                    <inset key="sectionInset" minX="25" minY="10" maxX="25" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Card" id="K70-GQ-7wB" customClass="CardCell" customModule="AutentiaScrumCards" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="5" width="80" height="80"/>
+                                        <rect key="frame" x="25" y="10" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -54,9 +50,10 @@
                                             <subviews>
                                                 <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2M-ia-0GL">
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="17"/>
                                                     <state key="normal" title="Button">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
@@ -65,7 +62,7 @@
                                                 </button>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="F2M-ia-0GL" firstAttribute="top" secondItem="K70-GQ-7wB" secondAttribute="top" id="AZO-A0-J4A"/>
                                             <constraint firstAttribute="bottom" secondItem="F2M-ia-0GL" secondAttribute="bottom" id="r7U-Jt-LhD"/>
@@ -78,13 +75,13 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="restButtonHeader" id="zhk-RN-hj9" customClass="RestButtonHeader" customModule="AutentiaScrumCards" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="90" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="100" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afE-wu-Hvf">
-                                            <rect key="frame" x="10" y="10" width="355" height="60"/>
+                                            <rect key="frame" x="25" y="10" width="325" height="60"/>
                                             <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                             <state key="normal" title="¿Descansamos?">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,12 +91,12 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="afE-wu-Hvf" secondAttribute="bottom" constant="10" id="Y4p-dk-6lo"/>
-                                        <constraint firstAttribute="trailing" secondItem="afE-wu-Hvf" secondAttribute="trailing" constant="10" id="ldp-ma-wKw"/>
+                                        <constraint firstAttribute="trailing" secondItem="afE-wu-Hvf" secondAttribute="trailing" constant="25" id="ldp-ma-wKw"/>
                                         <constraint firstItem="afE-wu-Hvf" firstAttribute="top" secondItem="zhk-RN-hj9" secondAttribute="top" constant="10" id="ln0-qF-cUe"/>
-                                        <constraint firstItem="afE-wu-Hvf" firstAttribute="leading" secondItem="zhk-RN-hj9" secondAttribute="leading" constant="10" id="qDq-Fb-HlW"/>
+                                        <constraint firstItem="afE-wu-Hvf" firstAttribute="leading" secondItem="zhk-RN-hj9" secondAttribute="leading" constant="25" id="qDq-Fb-HlW"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="restButton" destination="afE-wu-Hvf" id="a5g-WH-Wiw"/>
@@ -110,14 +107,23 @@
                                     <outlet property="delegate" destination="Smc-aP-mm9" id="JT6-pa-pFj"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrum cards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5F-ij-mbF">
+                                <rect key="frame" x="25" y="69" width="186.66666666666666" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WCT-ly-YeY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="30"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Mw-p4-ivl" firstAttribute="bottom" secondItem="7OM-j6-og2" secondAttribute="bottom" constant="30" id="GYh-cX-IbR"/>
-                            <constraint firstItem="J5F-ij-mbF" firstAttribute="centerX" secondItem="6Mw-p4-ivl" secondAttribute="centerX" id="Jej-rY-ydb"/>
+                            <constraint firstItem="6Mw-p4-ivl" firstAttribute="bottom" secondItem="7OM-j6-og2" secondAttribute="bottom" id="GYh-cX-IbR"/>
+                            <constraint firstItem="J5F-ij-mbF" firstAttribute="leading" secondItem="6Mw-p4-ivl" secondAttribute="leading" constant="25" id="M7B-hB-o9s"/>
                             <constraint firstItem="7OM-j6-og2" firstAttribute="leading" secondItem="6Mw-p4-ivl" secondAttribute="leading" id="TLq-RD-Eca"/>
                             <constraint firstItem="6Mw-p4-ivl" firstAttribute="trailing" secondItem="7OM-j6-og2" secondAttribute="trailing" id="VG7-KX-Cfu"/>
-                            <constraint firstItem="6Mw-p4-ivl" firstAttribute="top" secondItem="J5F-ij-mbF" secondAttribute="bottom" constant="-49" id="l1d-qW-iQN"/>
+                            <constraint firstItem="J5F-ij-mbF" firstAttribute="top" secondItem="6Mw-p4-ivl" secondAttribute="top" constant="25" id="sLX-4Z-gtK"/>
                             <constraint firstItem="7OM-j6-og2" firstAttribute="top" secondItem="J5F-ij-mbF" secondAttribute="bottom" constant="30" id="vr8-kX-Pad"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Mw-p4-ivl"/>
@@ -142,20 +148,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-QQ-QdG">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duH-Ln-VaS">
-                                <rect key="frame" x="16" y="48" width="30" height="33"/>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
-                                <state key="normal" title="OK"/>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="a8W-Ii-wtJ" eventType="touchUpInside" id="kjM-le-6s3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu selección" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kj-AJ-1yh">
                                 <rect key="frame" x="133.33333333333334" y="56" width="108.33333333333334" height="21"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duH-Ln-VaS">
+                                <rect key="frame" x="304" y="48" width="55" height="33"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Cerrar"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="a8W-Ii-wtJ" eventType="touchUpInside" id="kjM-le-6s3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -163,10 +169,10 @@
                             <constraint firstItem="2ce-QQ-QdG" firstAttribute="leading" secondItem="Ax2-Ae-feO" secondAttribute="leading" id="B1m-5P-wPE"/>
                             <constraint firstItem="5kj-AJ-1yh" firstAttribute="centerX" secondItem="Ax2-Ae-feO" secondAttribute="centerX" id="Ocx-p5-IqR"/>
                             <constraint firstItem="2ce-QQ-QdG" firstAttribute="top" secondItem="duH-Ln-VaS" secondAttribute="bottom" constant="7" id="Qto-pA-J4Y"/>
-                            <constraint firstItem="duH-Ln-VaS" firstAttribute="leading" secondItem="Ax2-Ae-feO" secondAttribute="leading" constant="16" id="Zyf-aa-gqZ"/>
                             <constraint firstItem="Ax2-Ae-feO" firstAttribute="bottom" secondItem="2ce-QQ-QdG" secondAttribute="bottom" id="akY-jh-gIW"/>
                             <constraint firstItem="2ce-QQ-QdG" firstAttribute="top" secondItem="Ax2-Ae-feO" secondAttribute="top" constant="44" id="eVm-dg-uR2"/>
                             <constraint firstItem="Ax2-Ae-feO" firstAttribute="trailing" secondItem="2ce-QQ-QdG" secondAttribute="trailing" id="yDd-pz-h7N"/>
+                            <constraint firstItem="Ax2-Ae-feO" firstAttribute="trailing" secondItem="duH-Ln-VaS" secondAttribute="trailing" constant="16" id="z75-ta-3wh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ax2-Ae-feO"/>
                     </view>
@@ -177,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9Z-h6-kYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115.625" y="-169.01408450704224"/>
+            <point key="canvasLocation" x="1114.4000000000001" y="-169.21182266009853"/>
         </scene>
     </scenes>
 </document>

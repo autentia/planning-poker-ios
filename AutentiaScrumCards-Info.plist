@@ -28,6 +28,9 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>OpenSans-Regular.ttf</string>
+		<string>WorkSans-Regular.ttf</string>
+		<string>Montserrat-Light.ttf</string>
 		<string>Montserrat-SemiBold.tff</string>
 		<string>Montserrat-Regular.ttf</string>
 	</array>

@@ -16,11 +16,11 @@ class CardsViewModel: NSObject {
     }
     
     func getImageName(at index:Int) -> String {
-        return "carta_\(self.allCards[index].name)_cc"
+        return "card_\(self.allCards[index].name)"
     }
     
     func getRestCardImageName() -> String {
-        return "carta_¿Descansamos?_cc"
+        return "restCard"
     }
     
     func getNumberOfCards()->Int {
