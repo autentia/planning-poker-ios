@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.titleLabel.text = viewModel.getTypeName()
     }
     
     @IBAction func changeEstimationType(_ sender: Any) {

@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuT-pu-WbJ">
-                                <rect key="frame" x="277" y="74" width="73" height="33"/>
+                                <rect key="frame" x="277" y="76" width="73" height="33"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Cambiar">
                                     <color key="titleColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,7 +236,7 @@
                                     <outlet property="delegate" destination="Smc-aP-mm9" id="JT6-pa-pFj"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrum cards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5F-ij-mbF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrum cards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5F-ij-mbF">
                                 <rect key="frame" x="25" y="69" width="186.66666666666666" height="36.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,10 +245,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="uuT-pu-WbJ" firstAttribute="top" secondItem="6Mw-p4-ivl" secondAttribute="top" constant="30" id="4Nu-Ng-DF9"/>
+                            <constraint firstItem="uuT-pu-WbJ" firstAttribute="top" secondItem="6Mw-p4-ivl" secondAttribute="top" constant="32" id="4Nu-Ng-DF9"/>
                             <constraint firstItem="6Mw-p4-ivl" firstAttribute="bottom" secondItem="7OM-j6-og2" secondAttribute="bottom" id="GYh-cX-IbR"/>
                             <constraint firstItem="J5F-ij-mbF" firstAttribute="leading" secondItem="6Mw-p4-ivl" secondAttribute="leading" constant="25" id="M7B-hB-o9s"/>
                             <constraint firstItem="7OM-j6-og2" firstAttribute="leading" secondItem="6Mw-p4-ivl" secondAttribute="leading" id="TLq-RD-Eca"/>
+                            <constraint firstItem="uuT-pu-WbJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J5F-ij-mbF" secondAttribute="trailing" constant="10" id="TRE-tt-pMM"/>
                             <constraint firstItem="6Mw-p4-ivl" firstAttribute="trailing" secondItem="uuT-pu-WbJ" secondAttribute="trailing" constant="25" id="TgO-Tr-PDp"/>
                             <constraint firstItem="6Mw-p4-ivl" firstAttribute="trailing" secondItem="7OM-j6-og2" secondAttribute="trailing" id="VG7-KX-Cfu"/>
                             <constraint firstItem="J5F-ij-mbF" firstAttribute="top" secondItem="6Mw-p4-ivl" secondAttribute="top" constant="25" id="sLX-4Z-gtK"/>

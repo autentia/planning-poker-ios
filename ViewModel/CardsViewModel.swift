@@ -10,6 +10,7 @@ import UIKit
 class CardsViewModel: NSObject {
     
     private let allCards:[Card]
+    private let typeName:String
     
     func getName(at index:Int) -> String {
         return self.allCards[index].name
@@ -27,11 +28,16 @@ class CardsViewModel: NSObject {
         return "tooMuchTime"
     }
     
+    func getTypeName() -> String {
+        return self.typeName
+    }
+    
     func getNumberOfCards()->Int {
         return self.allCards.count
     }
     
-    init(cards: [Card]) {
+    init(cards: [Card], typeName: String) {
         self.allCards = cards
+        self.typeName = typeName
     }
 }

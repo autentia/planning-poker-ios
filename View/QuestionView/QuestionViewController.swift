@@ -23,10 +23,10 @@ class QuestionViewController: UIViewController {
         // Pass the selected object to the new view controller.
             if let vc = segue.destination as? MainViewController{
                 if (segue.identifier == "shirtSizes"){
-                    vc.viewModel = CardsViewModel(cards: shirtSizes)
+                    vc.viewModel = CardsViewModel(cards: shirtSizes, typeName: "Tallas de camiseta")
                 }
                 else if(segue.identifier == "fibonacci"){
-                    vc.viewModel = CardsViewModel(cards: numericCards)
+                    vc.viewModel = CardsViewModel(cards: numericCards, typeName: "Fibonacci")
                 }
             }
     }
