@@ -11,12 +11,15 @@ class CardViewController: UIViewController {
 
     @IBOutlet weak var cardImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton!
     
     var cardImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cardImageView.image = cardImage
+        titleLabel.text = "Your choice".localized
+        closeButton.setTitle("Close".localized, for: UIControl.State.normal)
         // Do any additional setup after loading the view.
     }
     

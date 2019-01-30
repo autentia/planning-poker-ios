@@ -13,18 +13,14 @@ protocol CardCellPressedProtocol {
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var viewModel: CardsViewModel!
+    var viewModel: CardsViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleLabel.text = viewModel.getTypeName()
-    }
-    
-    @IBAction func changeEstimationType(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        //self.titleLabel.text = viewModel.getTypeName()
     }
     
     func openCardImageViewController(cardImageName: String) {
@@ -65,7 +61,7 @@ extension MainViewController: UICollectionViewDataSource {
 //    func collectionView(_ collectionView: UICollectionView,
 //                        layout collectionViewLayout: UICollectionViewLayout,
 //                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        //let cellSize = collectionViewLayout.
+//        let cellSize = collectionView.contentSize.width/3-collectionView.contentInset.left-collectionView.contentInset.right-10
 //        return CGSize(width: cellSize, height: cellSize)
 //    }
 //}

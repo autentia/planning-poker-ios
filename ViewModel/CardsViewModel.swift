@@ -7,7 +7,17 @@
 
 import UIKit
 
-class CardsViewModel: NSObject {
+protocol CardsViewModelProtocol {
+    
+    func getName(at index:Int) -> String
+    func getImageName(at index:Int) -> String
+    func getRestCardImageName() -> String
+    func getTooMuchTimeCardImageName() -> String
+    func getTypeName() -> String
+    func getNumberOfCards()->Int
+}
+
+class CardsViewModel: CardsViewModelProtocol {
     
     private let allCards:[Card]
     private let typeName:String

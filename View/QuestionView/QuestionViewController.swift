@@ -9,10 +9,29 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var shirtSizesButton: UIButton!
+    @IBOutlet weak var fibonacciButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.questionLabel.text = "EstimationQuestion".localized
+        self.shirtSizesButton.setTitle("ShirtSizes".localized, for: UIControl.State.normal)
+        self.fibonacciButton.setTitle("Fibonacci".localized, for: UIControl.State.normal)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let navigationBar = self.navigationController?.navigationBar
+        //remove one pixel line in the navigation bar
+        navigationBar?.setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+        navigationBar?.shadowImage = UIImage()
+        //customize navigation item
+        self.navigationItem.backBarButtonItem?.title = "Menu".localized
+        self.navigationItem.backBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-SemiBold", size: 18)!], for: UIControl.State.normal)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //self.navigationController?.isNavigationBarHidden = false  //Show
     }
     
     // MARK: - Navigation
@@ -22,11 +41,11 @@ class QuestionViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
             if let vc = segue.destination as? MainViewController{
-                if (segue.identifier == "shirtSizes"){
-                    vc.viewModel = CardsViewModel(cards: shirtSizes, typeName: "Tallas de camiseta")
+                if (segue.identifier == "showShirtSizes"){
+                    vc.viewModel = CardsViewModel(cards: EstimationCardTypes.getSizeOfShirtCards(), typeName: "ShirtSizes".localized)
                 }
-                else if(segue.identifier == "fibonacci"){
-                    vc.viewModel = CardsViewModel(cards: numericCards, typeName: "Fibonacci")
+                else if(segue.identifier == "showFibonacci"){
+                    vc.viewModel = CardsViewModel(cards: EstimationCardTypes.getFibonacciCards(), typeName: "Fibonacci".localized)
                 }
             }
     }
