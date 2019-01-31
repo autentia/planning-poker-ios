@@ -16,7 +16,6 @@
 		4446EBFD21FF268800B6C52F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */; };
 		4446EC0021FF2A1E00B6C52F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EBFF21FF2A1E00B6C52F /* Card.swift */; };
 		4446EC0521FF2BF700B6C52F /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */; };
-		4446EC0721FF64CA00B6C52F /* RestButtonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC0621FF64CA00B6C52F /* RestButtonHeader.swift */; };
 		4446EC092200685000B6C52F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC082200685000B6C52F /* Montserrat-Light.ttf */; };
 		4446EC0B22006A7200B6C52F /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC0A22006A7200B6C52F /* WorkSans-Regular.ttf */; };
 		4446EC0D22006BBF00B6C52F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC0C22006BBF00B6C52F /* OpenSans-Regular.ttf */; };
@@ -24,10 +23,13 @@
 		4446EC122201A84800B6C52F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC112201A84800B6C52F /* Localizable.strings */; };
 		4446EC152201A96300B6C52F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC142201A96300B6C52F /* String.swift */; };
 		4446EC202201B8D100B6C52F /* AutentiaScrumCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC1F2201B8D100B6C52F /* AutentiaScrumCardsUITests.swift */; };
+		4446EC282201C7C100B6C52F /* RestButtonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC272201C7C100B6C52F /* RestButtonHeader.swift */; };
+		4446EC2B2201C8B700B6C52F /* MainFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC2A2201C8B700B6C52F /* MainFrame.swift */; };
+		4446EC2D2201C8F600B6C52F /* EstimationCardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC2C2201C8F600B6C52F /* EstimationCardTypes.swift */; };
 		4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88B21FB4E6C00071136 /* Media.xcassets */; };
 		4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88D21FB4F0B00071136 /* Icons.xcassets */; };
 		4480A89221FB5CDE00071136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4480A89121FB5CDE00071136 /* Main.storyboard */; };
-		4480A8BA21FB6DE100071136 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8B921FB6DE100071136 /* MainViewController.swift */; };
+		4480A8BA21FB6DE100071136 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8B921FB6DE100071136 /* CardsViewController.swift */; };
 		4480A8BD21FB6F9B00071136 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8BC21FB6F9B00071136 /* CardCell.swift */; };
 		4480A8BF21FF022900071136 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480A8BE21FF022900071136 /* CardViewController.swift */; };
 		4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4D543DDC18EF2CD2001A7DF7 /* LICENSE */; };
@@ -45,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* AutentiaScrumCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutentiaScrumCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Planing poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planing poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutentiaScrumCards_Prefix.pch; sourceTree = "<group>"; };
@@ -55,7 +57,6 @@
 		4446EBFC21FF268800B6C52F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		4446EBFF21FF2A1E00B6C52F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4446EC0421FF2BF700B6C52F /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
-		4446EC0621FF64CA00B6C52F /* RestButtonHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestButtonHeader.swift; path = View/RestButtonHeader.swift; sourceTree = "<group>"; };
 		4446EC082200685000B6C52F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		4446EC0A22006A7200B6C52F /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		4446EC0C22006BBF00B6C52F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -65,11 +66,14 @@
 		4446EC1D2201B8D100B6C52F /* AutentiaScrumCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutentiaScrumCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4446EC1F2201B8D100B6C52F /* AutentiaScrumCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutentiaScrumCardsUITests.swift; sourceTree = "<group>"; };
 		4446EC212201B8D100B6C52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4446EC272201C7C100B6C52F /* RestButtonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestButtonHeader.swift; path = Views/RestButtonHeader.swift; sourceTree = "<group>"; };
+		4446EC2A2201C8B700B6C52F /* MainFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrame.swift; sourceTree = "<group>"; };
+		4446EC2C2201C8F600B6C52F /* EstimationCardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationCardTypes.swift; sourceTree = "<group>"; };
 		4480A88B21FB4E6C00071136 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4480A88D21FB4F0B00071136 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		4480A89121FB5CDE00071136 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4480A89321FB681600071136 /* AutentiaScrumCards-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutentiaScrumCards-Bridging-Header.h"; sourceTree = "<group>"; };
-		4480A8B921FB6DE100071136 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4480A8B921FB6DE100071136 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		4480A8BC21FB6F9B00071136 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		4480A8BE21FF022900071136 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		4D543DDC18EF2CD2001A7DF7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -109,39 +113,40 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* AutentiaScrumCards.app */,
+				1D6058910D05DD3D006BFB54 /* Planing poker.app */,
 				4446EC1D2201B8D100B6C52F /* AutentiaScrumCardsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
+		281C6CD70DB2D82200F60ACC /* CardView */ = {
 			isa = PBXGroup;
 			children = (
 				4480A8BE21FF022900071136 /* CardViewController.swift */,
 			);
-			name = "Flipside View";
+			name = CardView;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		289233A00DB2D0730083E9F9 /* Main View */ = {
+		289233A00DB2D0730083E9F9 /* CardsView */ = {
 			isa = PBXGroup;
 			children = (
 				4480A8BC21FB6F9B00071136 /* CardCell.swift */,
-				4480A8B921FB6DE100071136 /* MainViewController.swift */,
-				4446EC0621FF64CA00B6C52F /* RestButtonHeader.swift */,
+				4480A8B921FB6DE100071136 /* CardsViewController.swift */,
+				4446EC272201C7C100B6C52F /* RestButtonHeader.swift */,
 			);
-			name = "Main View";
+			name = CardsView;
 			path = ..;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4446EC292201C89A00B6C52F /* MainFrame */,
 				4446EC132201A94B00B6C52F /* Utilities */,
 				4446EBFE21FF29F800B6C52F /* Model */,
 				4446EC0221FF2BB700B6C52F /* ViewModel */,
-				4446EC0321FF2BC700B6C52F /* View */,
+				4446EC0321FF2BC700B6C52F /* Views */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				4446EBFF21FF2A1E00B6C52F /* Card.swift */,
+				4446EC2C2201C8F600B6C52F /* EstimationCardTypes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,14 +212,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		4446EC0321FF2BC700B6C52F /* View */ = {
+		4446EC0321FF2BC700B6C52F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4446EC0E22007CDD00B6C52F /* QuestionView */,
-				289233A00DB2D0730083E9F9 /* Main View */,
-				281C6CD70DB2D82200F60ACC /* Flipside View */,
+				289233A00DB2D0730083E9F9 /* CardsView */,
+				281C6CD70DB2D82200F60ACC /* CardView */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4446EC0E22007CDD00B6C52F /* QuestionView */ = {
@@ -241,6 +247,14 @@
 			path = AutentiaScrumCardsUITests;
 			sourceTree = "<group>";
 		};
+		4446EC292201C89A00B6C52F /* MainFrame */ = {
+			isa = PBXGroup;
+			children = (
+				4446EC2A2201C8B700B6C52F /* MainFrame.swift */,
+			);
+			path = MainFrame;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,7 +272,7 @@
 			);
 			name = AutentiaScrumCards;
 			productName = BarajaScrupAutentia;
-			productReference = 1D6058910D05DD3D006BFB54 /* AutentiaScrumCards.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Planing poker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4446EC1C2201B8D100B6C52F /* AutentiaScrumCardsUITests */ = {
@@ -351,15 +365,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4446EC2B2201C8B700B6C52F /* MainFrame.swift in Sources */,
 				4446EBF721FF1DEE00B6C52F /* AppDelegate.swift in Sources */,
 				4480A8BD21FB6F9B00071136 /* CardCell.swift in Sources */,
+				4446EC2D2201C8F600B6C52F /* EstimationCardTypes.swift in Sources */,
 				4446EC0021FF2A1E00B6C52F /* Card.swift in Sources */,
 				4446EC152201A96300B6C52F /* String.swift in Sources */,
+				4446EC282201C7C100B6C52F /* RestButtonHeader.swift in Sources */,
 				4480A8BF21FF022900071136 /* CardViewController.swift in Sources */,
 				4446EC0521FF2BF700B6C52F /* CardsViewModel.swift in Sources */,
-				4480A8BA21FB6DE100071136 /* MainViewController.swift in Sources */,
+				4480A8BA21FB6DE100071136 /* CardsViewController.swift in Sources */,
 				4446EC1022007DC400B6C52F /* QuestionViewController.swift in Sources */,
-				4446EC0721FF64CA00B6C52F /* RestButtonHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +413,7 @@
 				INFOPLIST_FILE = "AutentiaScrumCards-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = AutentiaScrumCards;
+				PRODUCT_NAME = "Planing poker";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutentiaScrumCards-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -418,7 +434,7 @@
 				INFOPLIST_FILE = "AutentiaScrumCards-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = AutentiaScrumCards;
+				PRODUCT_NAME = "Planing poker";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutentiaScrumCards-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

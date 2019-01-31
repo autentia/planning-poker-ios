@@ -8,7 +8,8 @@
 import UIKit
 
 class RestButtonHeader: UICollectionReusableView {
-    
     @IBOutlet weak var restButton: UIButton!
+    @IBOutlet weak var tooMuchTimeButton: UIButton!
+    
     
 }

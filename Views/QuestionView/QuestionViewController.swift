@@ -13,11 +13,15 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var shirtSizesButton: UIButton!
     @IBOutlet weak var fibonacciButton: UIButton!
     
+    var mainFrame: MainFrameProtocol!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.questionLabel.text = "EstimationQuestion".localized
         self.shirtSizesButton.setTitle("ShirtSizes".localized, for: UIControl.State.normal)
         self.fibonacciButton.setTitle("Fibonacci".localized, for: UIControl.State.normal)
+        mainFrame = MainFrame()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,14 +44,7 @@ class QuestionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-            if let vc = segue.destination as? MainViewController{
-                if (segue.identifier == "showShirtSizes"){
-                    vc.viewModel = CardsViewModel(cards: EstimationCardTypes.getSizeOfShirtCards(), typeName: "ShirtSizes".localized)
-                }
-                else if(segue.identifier == "showFibonacci"){
-                    vc.viewModel = CardsViewModel(cards: EstimationCardTypes.getFibonacciCards(), typeName: "Fibonacci".localized)
-                }
-            }
+        mainFrame.showCardsViewController(for: segue)
     }
 
 }

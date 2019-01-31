@@ -11,35 +11,29 @@ protocol CardCellPressedProtocol {
     func cardCellPressed(cell:CardCell)
 }
 
-class MainViewController: UIViewController {
-    
+class CardsViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel: CardsViewModelProtocol!
+    var mainFrame: MainFrameProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainFrame = MainFrame()
         //self.titleLabel.text = viewModel.getTypeName()
     }
     
-    func openCardImageViewController(cardImageName: String) {
-        let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cardViewController") as! CardViewController
-        cardViewController.cardImage = UIImage.init(named: cardImageName)
-        cardViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        self.present(cardViewController, animated: true, completion: nil)
-    }
-    
     @IBAction func openRestCard(_ sender: Any) {
-        self.openCardImageViewController(cardImageName: viewModel.getRestCardImageName())
+        mainFrame.showCardViewController(for: self, cardImageName: viewModel.getRestCardImageName())
     }
     
     @IBAction func openTooMuchTimeCard(_ sender: Any) {
-        self.openCardImageViewController(cardImageName: viewModel.getTooMuchTimeCardImageName())
+        mainFrame.showCardViewController(for: self, cardImageName: viewModel.getTooMuchTimeCardImageName())
     }
 }
 
-extension MainViewController: UICollectionViewDataSource {
+extension CardsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.getNumberOfCards();
     }
@@ -66,11 +60,11 @@ extension MainViewController: UICollectionViewDataSource {
 //    }
 //}
 
-extension MainViewController: CardCellPressedProtocol{
+extension CardsViewController: CardCellPressedProtocol{
     
     func cardCellPressed(cell: CardCell) {
         if let cellIndexPath = self.collectionView.indexPath(for: cell){
-            self.openCardImageViewController(cardImageName: self.viewModel.getImageName(at: cellIndexPath.row))
+            mainFrame.showCardViewController(for: self, cardImageName: self.viewModel.getImageName(at: cellIndexPath.row))
         }
     }
 }
