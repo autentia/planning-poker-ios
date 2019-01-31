@@ -14,8 +14,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var fibonacciButton: UIButton!
     
     var mainFrame: MainFrameProtocol!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.questionLabel.text = "EstimationQuestion".localized
@@ -30,6 +29,7 @@ class QuestionViewController: UIViewController {
         navigationBar?.setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
         navigationBar?.shadowImage = UIImage()
         //customize navigation item
+        self.navigationItem.title = "Title".localized
         self.navigationItem.backBarButtonItem?.title = "Menu".localized
         self.navigationItem.backBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-SemiBold", size: 18)!], for: UIControl.State.normal)
     }

@@ -23,7 +23,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Planing poker-->
+        <!--Planning poker-->
         <scene sceneID="rAR-Pl-bgb">
             <objects>
                 <viewController id="Ad0-jw-0YW" customClass="QuestionViewController" customModule="AutentiaScrumCards" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,7 +95,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oon-Kr-ui8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Planing poker" id="ZI3-Cq-Dag">
+                    <navigationItem key="navigationItem" title="Planning poker" id="ZI3-Cq-Dag">
                         <barButtonItem key="backBarButtonItem" title="Menú" id="a3g-jh-Cd1"/>
                     </navigationItem>
                     <connections>
@@ -117,16 +117,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7OM-j6-og2">
-                                <rect key="frame" x="0.0" y="-20" width="320" height="500"/>
+                                <rect key="frame" x="0.0" y="-25" width="320" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="cKG-8d-9yM"/>
+                                    <constraint firstAttribute="height" constant="510" id="cKG-8d-9yM"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="5" id="DbH-QO-Hxp">
                                     <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="375" height="80"/>
-                                    <inset key="sectionInset" minX="25" minY="10" maxX="25" maxY="20"/>
+                                    <inset key="sectionInset" minX="25" minY="10" maxX="25" maxY="35"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Card" id="K70-GQ-7wB" customClass="CardCell" customModule="AutentiaScrumCards" customModuleProvider="target">
@@ -169,13 +169,14 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="restButtonHeader" id="zhk-RN-hj9" customClass="RestButtonHeader" customModule="AutentiaScrumCards" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="110" width="320" height="80"/>
+                                    <rect key="frame" x="0.0" y="125" width="320" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afE-wu-Hvf">
                                             <rect key="frame" x="170" y="10" width="125" height="60"/>
                                             <color key="backgroundColor" red="0.062745098040000002" green="0.023529411760000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" title="¿?">
+                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
+                                            <state key="normal" title="Continuar">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -198,7 +199,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="WDr-aY-N7r"/>
                                             </constraints>
-                                            <state key="normal" title="¿Descansamos?">
+                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
+                                            <state key="normal" title="Descansar">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
