@@ -15,19 +15,19 @@ protocol MainFrameProtocol {
 }
 
 class MainFrame: MainFrameProtocol {
-    func showCardViewController(for viewController: UIViewController, cardImageName:String) {
-        let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cardViewController") as! CardViewController
-        cardViewController.cardImage = UIImage.init(named: cardImageName)
-        cardViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        viewController.present(cardViewController, animated: true, completion: nil)
-    }
-    
     func showRestCard() {
         
     }
     
     func showTooMuchTimeController() {
         
+    }
+    
+    func showCardViewController(for viewController: UIViewController, cardImageName:String) {
+        let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cardViewController") as! CardViewController
+        cardViewController.cardImage = UIImage.init(named: cardImageName)
+        cardViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        viewController.present(cardViewController, animated: true, completion: nil)
     }
     
     func showCardsViewController(for segue: UIStoryboardSegue) {
