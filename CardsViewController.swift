@@ -47,6 +47,8 @@ extension CardsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let restButtonHeader: RestButtonHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "restButtonHeader", for: indexPath) as! RestButtonHeader
+        restButtonHeader.restButton.setTitle("RestButton".localized, for: .normal)
+        restButtonHeader.tooMuchTimeButton.setTitle("ContinueButton".localized, for: .normal)
         return restButtonHeader
     }
 }
