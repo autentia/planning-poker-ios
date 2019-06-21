@@ -15,6 +15,8 @@ class CardsViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let maximumCellSize = CGFloat(150)
+    
     var viewModel: CardsViewModelProtocol!
     var mainFrame: MainFrameProtocol!
     
@@ -53,14 +55,14 @@ extension CardsViewController: UICollectionViewDataSource {
     }
 }
 
-//extension MainViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let cellSize = collectionView.contentSize.width/3-collectionView.contentInset.left-collectionView.contentInset.right-10
-//        return CGSize(width: cellSize, height: cellSize)
-//    }
-//}
+extension CardsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellSize = min(collectionView.bounds.width/4-collectionView.contentInset.left-collectionView.contentInset.right-10, maximumCellSize)
+        return CGSize(width: cellSize, height: cellSize)
+    }
+}
 
 extension CardsViewController: CardCellPressedProtocol{
     
