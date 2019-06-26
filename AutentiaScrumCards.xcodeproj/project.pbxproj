@@ -10,6 +10,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
+		440FBD1822C393D3007CCBA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 440FBD1A22C393D3007CCBA2 /* Localizable.strings */; };
 		4446EBF721FF1DEE00B6C52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EBF621FF1DED00B6C52F /* AppDelegate.swift */; };
 		4446EBF921FF22D400B6C52F /* MainLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBF821FF22D400B6C52F /* MainLaunchScreen.storyboard */; };
 		4446EBFB21FF25EF00B6C52F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EBFA21FF25EF00B6C52F /* Montserrat-Regular.ttf */; };
@@ -20,7 +21,6 @@
 		4446EC0B22006A7200B6C52F /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC0A22006A7200B6C52F /* WorkSans-Regular.ttf */; };
 		4446EC0D22006BBF00B6C52F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC0C22006BBF00B6C52F /* OpenSans-Regular.ttf */; };
 		4446EC1022007DC400B6C52F /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC0F22007DC400B6C52F /* QuestionViewController.swift */; };
-		4446EC122201A84800B6C52F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4446EC112201A84800B6C52F /* Localizable.strings */; };
 		4446EC152201A96300B6C52F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC142201A96300B6C52F /* String.swift */; };
 		4446EC202201B8D100B6C52F /* AutentiaScrumCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC1F2201B8D100B6C52F /* AutentiaScrumCardsUITests.swift */; };
 		4446EC282201C7C100B6C52F /* RestButtonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC272201C7C100B6C52F /* RestButtonHeader.swift */; };
@@ -51,6 +51,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutentiaScrumCards_Prefix.pch; sourceTree = "<group>"; };
+		440FBD1922C393D3007CCBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		440FBD1B22C3940D007CCBA2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4446EBF621FF1DED00B6C52F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4446EBF821FF22D400B6C52F /* MainLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLaunchScreen.storyboard; sourceTree = "<group>"; };
 		4446EBFA21FF25EF00B6C52F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -61,7 +63,6 @@
 		4446EC0A22006A7200B6C52F /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		4446EC0C22006BBF00B6C52F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		4446EC0F22007DC400B6C52F /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
-		4446EC112201A84800B6C52F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4446EC142201A96300B6C52F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4446EC1D2201B8D100B6C52F /* AutentiaScrumCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutentiaScrumCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4446EC1F2201B8D100B6C52F /* AutentiaScrumCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutentiaScrumCardsUITests.swift; sourceTree = "<group>"; };
@@ -180,7 +181,7 @@
 				4446EBF821FF22D400B6C52F /* MainLaunchScreen.storyboard */,
 				4480A88D21FB4F0B00071136 /* Icons.xcassets */,
 				4480A88B21FB4E6C00071136 /* Media.xcassets */,
-				4446EC112201A84800B6C52F /* Localizable.strings */,
+				440FBD1A22C393D3007CCBA2 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -321,6 +322,7 @@
 				ja,
 				fr,
 				de,
+				es,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -339,7 +341,7 @@
 			files = (
 				4446EC092200685000B6C52F /* Montserrat-Light.ttf in Resources */,
 				4446EBFB21FF25EF00B6C52F /* Montserrat-Regular.ttf in Resources */,
-				4446EC122201A84800B6C52F /* Localizable.strings in Resources */,
+				440FBD1822C393D3007CCBA2 /* Localizable.strings in Resources */,
 				4480A89221FB5CDE00071136 /* Main.storyboard in Resources */,
 				4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */,
 				4D543DDD18EF2CD2001A7DF7 /* LICENSE in Resources */,
@@ -396,6 +398,18 @@
 			targetProxy = 4446EC222201B8D100B6C52F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		440FBD1A22C393D3007CCBA2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440FBD1922C393D3007CCBA2 /* en */,
+				440FBD1B22C3940D007CCBA2 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

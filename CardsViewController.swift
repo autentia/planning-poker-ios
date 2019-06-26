@@ -27,11 +27,11 @@ class CardsViewController: UIViewController {
     }
     
     @IBAction func openRestCard(_ sender: Any) {
-        mainFrame.showCardViewController(for: self, cardImageName: viewModel.getRestCardImageName())
+        mainFrame.showCardViewController(for: self, cardImageName: viewModel.getRestCardImageName(), bottomText: viewModel.getRestCardBottomText())
     }
     
     @IBAction func openTooMuchTimeCard(_ sender: Any) {
-        mainFrame.showCardViewController(for: self, cardImageName: viewModel.getTooMuchTimeCardImageName())
+        mainFrame.showCardViewController(for: self, cardImageName: viewModel.getTooMuchTimeCardImageName(), bottomText: viewModel.getTooMuchTimeCardBottomText())
     }
 }
 
@@ -68,7 +68,7 @@ extension CardsViewController: CardCellPressedProtocol{
     
     func cardCellPressed(cell: CardCell) {
         if let cellIndexPath = self.collectionView.indexPath(for: cell){
-            mainFrame.showCardViewController(for: self, cardImageName: self.viewModel.getImageName(at: cellIndexPath.row))
+            mainFrame.showCardViewController(for: self, cardImageName: self.viewModel.getImageName(at: cellIndexPath.row), bottomText: self.viewModel.getBottomText(at: cellIndexPath.row))
         }
     }
 }

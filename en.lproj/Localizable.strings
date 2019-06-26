@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  AutentiaScrumCards
+
+  Created by Anton Zuev on 30/01/2019.
+  
+*/
+
+"ShirtSizes" = "T-Shirt sizes";
+"Fibonacci" = "Fibonacci";
+"EstimationQuestion" = "What type of estimation do you want to use?";
+"Menu" = "Menu";
+"Your choice" = "Your choice";
+"Close" = "Close";
+"Title" = "Planning poker";
+"RestButton" = "Rest";
+"ContinueButton" = "Continue";
+"RestText"="It is needed a rest";
+"ContinueText"="Too much time is spent on a point or topic";
+"InfinityText"="The PBI is too big and you have to divide it";
+"DoneText"="The PBI is already done or does not require any effort";
+
+
+
+

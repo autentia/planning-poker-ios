@@ -15,7 +15,10 @@
 "Title" = "Planning poker";
 "RestButton" = "Descansar";
 "ContinueButton" = "Continuar";
-
+"RestText"="Se necesita un descanso";
+"ContinueText"="Se está dedicando demasiado tiempo a un punto o tema";
+"InfinityText"="El PBI es demasiado grande y hay que dividirlo";
+"DoneText"="El PBI ya está hecho o no requiere ningún esfuerzo";
 
 
 
