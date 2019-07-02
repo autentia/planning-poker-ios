@@ -47,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Planning poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planning poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Scrum Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scrum Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* AutentiaScrumCards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutentiaScrumCards_Prefix.pch; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Planning poker.app */,
+				1D6058910D05DD3D006BFB54 /* Scrum Cards.app */,
 				4446EC1D2201B8D100B6C52F /* AutentiaScrumCardsUITests.xctest */,
 			);
 			name = Products;
@@ -273,7 +273,7 @@
 			);
 			name = AutentiaScrumCards;
 			productName = BarajaScrupAutentia;
-			productReference = 1D6058910D05DD3D006BFB54 /* Planning poker.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Scrum Cards.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4446EC1C2201B8D100B6C52F /* AutentiaScrumCardsUITests */ = {
@@ -431,7 +431,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autentia.scrumcards;
-				PRODUCT_NAME = "Planning poker";
+				PRODUCT_NAME = "Scrum Cards";
 				PROVISIONING_PROFILE_SPECIFIER = "Scrum Cards Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutentiaScrumCards-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -457,7 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autentia.scrumcards;
-				PRODUCT_NAME = "Planning poker";
+				PRODUCT_NAME = "Scrum Cards";
 				PROVISIONING_PROFILE_SPECIFIER = "Scrum Cards final";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutentiaScrumCards-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
