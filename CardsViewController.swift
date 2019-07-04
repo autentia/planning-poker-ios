@@ -11,12 +11,17 @@ protocol CardCellPressedProtocol {
     func cardCellPressed(cell:CardCell)
 }
 
+protocol CardViewSwipeProtocol {
+    func swipeToLeftHappened(vc: CardViewController, gr: UIGestureRecognizer)
+    func swipeToRightHappened(vc: CardViewController, gr: UIGestureRecognizer)
+}
+
 class CardsViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     let maximumCellSize = CGFloat(150)
-    
+    var currentSelectedCellIndex: IndexPath?
     var viewModel: CardsViewModelProtocol!
     var mainFrame: MainFrameProtocol!
     
@@ -74,7 +79,41 @@ extension CardsViewController: CardCellPressedProtocol{
     
     func cardCellPressed(cell: CardCell) {
         if let cellIndexPath = self.collectionView.indexPath(for: cell){
+            self.currentSelectedCellIndex = cellIndexPath
             mainFrame.showCardViewController(for: self, cardImageName: self.viewModel.getImageName(at: cellIndexPath.row), bottomText: self.viewModel.getBottomText(at: cellIndexPath.row))
         }
+    }
+}
+
+extension CardsViewController: CardViewSwipeProtocol {
+    
+    func setNewValues(to vc: CardViewController, nextCellIndexRow: Int, gr: UIGestureRecognizer) {
+        if gr.state == .ended {
+            vc.cardImageView.alpha = 0
+            UIView.animate(withDuration: 0.3) {
+                vc.cardImageView.alpha = 1
+                vc.cardImageView.image = UIImage.init(named: self.viewModel.getImageName(at: nextCellIndexRow))
+                vc.bottomLabel.text = self.viewModel.getBottomText(at: nextCellIndexRow)
+            }
+        }
+    }
+    
+    func swipeToLeftHappened(vc: CardViewController, gr: UIGestureRecognizer) {
+        if let currentSelectedCellIndex = self.currentSelectedCellIndex?.row {
+            if let nextCellIndexRow = self.viewModel.getNextCardIndex(currentCardIndex: currentSelectedCellIndex) {
+                self.currentSelectedCellIndex = IndexPath(row: nextCellIndexRow, section: 0)
+                self.setNewValues(to: vc, nextCellIndexRow: nextCellIndexRow, gr: gr)
+            }
+        }
+    }
+    
+    func swipeToRightHappened(vc: CardViewController, gr: UIGestureRecognizer) {
+            if let currentSelectedCellIndex = self.currentSelectedCellIndex?.row {
+                if let nextCellIndexRow = self.viewModel.getPreviousCardIndex(currentCardIndex: currentSelectedCellIndex) {
+                    self.currentSelectedCellIndex = IndexPath(row: nextCellIndexRow, section: 0)
+                    self.setNewValues(to: vc, nextCellIndexRow: nextCellIndexRow, gr: gr)
+                }
+            }
+
     }
 }
