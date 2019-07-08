@@ -12,8 +12,7 @@ protocol CardCellPressedProtocol {
 }
 
 protocol CardViewSwipeProtocol {
-    func swipeToLeftHappened(vc: CardViewController, gr: UIGestureRecognizer)
-    func swipeToRightHappened(vc: CardViewController, gr: UIGestureRecognizer)
+    func panGestureHappened(vc: CardViewController, gr: UIPanGestureRecognizer)
 }
 
 class CardsViewController: UIViewController {
@@ -24,6 +23,11 @@ class CardsViewController: UIViewController {
     var currentSelectedCellIndex: IndexPath?
     var viewModel: CardsViewModelProtocol!
     var mainFrame: MainFrameProtocol!
+    
+    var firstX = CGFloat(0)
+    var firstY = CGFloat(0)
+    var nextCardView: UIView?
+    var previousCardView: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,15 +91,78 @@ extension CardsViewController: CardCellPressedProtocol{
 
 extension CardsViewController: CardViewSwipeProtocol {
     
+    func panGestureHappened(vc: CardViewController, gr: UIPanGestureRecognizer) {
+        let translation = gr.translation(in: vc.view)
+        if gr.state == .began {
+            firstX = vc.cardImageView.center.x
+            firstY = vc.cardImageView.center.y
+            vc.cardImageView.center = CGPoint(x: firstX + translation.x, y: firstY)
+            self.previousCardView = self.addPreviousCardView(to: vc, gr: gr)
+            self.nextCardView = self.addNextCardView(to: vc, gr: gr)
+        } else if gr.state == .changed {
+            vc.cardImageView.center = CGPoint(x: firstX + translation.x, y: firstY)
+            if translation.x > 25 {
+                self.previousCardView?.alpha = abs(gr.translation(in: vc.view).x/vc.view.bounds.width)
+                self.previousCardView?.center = CGPoint(x: firstX - vc.view.bounds.width * 0.7 + translation.x, y: firstY)
+            } else if translation.x < -25 {
+                 self.nextCardView?.center = CGPoint(x: firstX + vc.view.bounds.width * 0.7 + translation.x, y: firstY)
+                self.nextCardView?.alpha = abs(gr.translation(in: vc.view).x/vc.view.bounds.width)
+            }
+        } else if gr.state == .ended {
+            vc.cardImageView.center = CGPoint(x: firstX, y: firstY)
+            self.nextCardView?.removeFromSuperview()
+            self.nextCardView = nil
+            self.previousCardView?.removeFromSuperview()
+            self.previousCardView = nil
+            if translation.x > 100 {
+                self.swipeToRightHappened(vc: vc, gr: gr)
+            } else if translation.x < -100 {
+                self.swipeToLeftHappened(vc: vc, gr: gr)
+            }
+        } else {
+            vc.cardImageView.center = CGPoint(x: firstX, y: firstY)
+        }
+    }
+    
+    
+    func createAndAddCardImageView(imageName: UIImage?, bounds: CGRect, parentView: UIView) -> UIView? {
+        let cardView = UIImageView(image: imageName)
+        cardView.alpha = 0
+        cardView.contentMode = .scaleAspectFit
+        cardView.center = CGPoint(x: firstX, y: firstY)
+        cardView.bounds = CGRect(x: 0, y: 0, width: bounds.width/2, height: bounds.height/2)
+        parentView.addSubview(cardView)
+        return cardView
+    }
+    
+    func addNextCardView(to vc: CardViewController, gr: UIPanGestureRecognizer) -> UIView? {
+        if let currentSelectedCellIndex = self.currentSelectedCellIndex?.row {
+            if let nextCellIndexRow = self.viewModel.getNextCardIndex(currentCardIndex: currentSelectedCellIndex) {
+                let cardView = self.createAndAddCardImageView(imageName: UIImage.init(named: self.viewModel.getImageName(at: nextCellIndexRow)), bounds: vc.cardImageView.bounds, parentView: vc.view)
+                return cardView
+            }
+        }
+        return nil
+    }
+    
+    func addPreviousCardView(to vc: CardViewController, gr: UIPanGestureRecognizer) -> UIView? {
+        if let currentSelectedCellIndex = self.currentSelectedCellIndex?.row {
+            if let nextCellIndexRow = self.viewModel.getPreviousCardIndex(currentCardIndex: currentSelectedCellIndex) {
+                let cardView = self.createAndAddCardImageView(imageName: UIImage.init(named: self.viewModel.getImageName(at: nextCellIndexRow)), bounds: vc.cardImageView.bounds, parentView: vc.view)
+                return cardView
+            }
+        }
+        return nil
+    }
+    
+    
     func setNewValues(to vc: CardViewController, nextCellIndexRow: Int, gr: UIGestureRecognizer) {
-        if gr.state == .ended {
             vc.cardImageView.alpha = 0
             UIView.animate(withDuration: 0.3) {
                 vc.cardImageView.alpha = 1
                 vc.cardImageView.image = UIImage.init(named: self.viewModel.getImageName(at: nextCellIndexRow))
                 vc.bottomLabel.text = self.viewModel.getBottomText(at: nextCellIndexRow)
             }
-        }
     }
     
     func swipeToLeftHappened(vc: CardViewController, gr: UIGestureRecognizer) {

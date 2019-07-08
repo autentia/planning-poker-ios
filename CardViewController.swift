@@ -24,25 +24,13 @@ class CardViewController: UIViewController {
         bottomLabel.text = bottomText
         titleLabel.text = "Your choice".localized
         closeButton.setTitle("Close".localized, for: UIControl.State.normal)
-        let swipeLeftGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeToLeftHappened(_:)))
-        swipeLeftGestureRecognizer.direction = .left
-        self.view.addGestureRecognizer(swipeLeftGestureRecognizer)
-        
-        let swipeRightGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeToRightHappened(_:)))
-        swipeRightGestureRecognizer.direction = .right
-        self.view.addGestureRecognizer(swipeRightGestureRecognizer)
-        
-//        self.cardImageView.addGestureRecognizer(swipeLeftGestureRecognizer)
-//        self.cardImageView.addGestureRecognizer(swipeRightGestureRecognizer)
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureHappened(_:)))
+        self.view.addGestureRecognizer(panGestureRecognizer)
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func swipeToRightHappened(_ sender: UIGestureRecognizer) {
-        self.delegate?.swipeToRightHappened(vc: self, gr: sender)
-    }
-    
-    @IBAction func swipeToLeftHappened(_ sender: UIGestureRecognizer) {
-        self.delegate?.swipeToLeftHappened(vc: self, gr: sender)
+    @IBAction func panGestureHappened(_ sender: UIPanGestureRecognizer) {
+        self.delegate?.panGestureHappened(vc: self, gr: sender)
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {
