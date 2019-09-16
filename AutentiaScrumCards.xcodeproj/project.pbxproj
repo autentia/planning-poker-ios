@@ -26,6 +26,7 @@
 		4446EC282201C7C100B6C52F /* RestButtonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC272201C7C100B6C52F /* RestButtonHeader.swift */; };
 		4446EC2B2201C8B700B6C52F /* MainFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC2A2201C8B700B6C52F /* MainFrame.swift */; };
 		4446EC2D2201C8F600B6C52F /* EstimationCardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446EC2C2201C8F600B6C52F /* EstimationCardTypes.swift */; };
+		446E6009232F953900F47495 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446E6008232F953900F47495 /* AudioToolbox.framework */; };
 		4480A88C21FB4E6C00071136 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88B21FB4E6C00071136 /* Media.xcassets */; };
 		4480A88E21FB4F0B00071136 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4480A88D21FB4F0B00071136 /* Icons.xcassets */; };
 		4480A89221FB5CDE00071136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4480A89121FB5CDE00071136 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		4446EC272201C7C100B6C52F /* RestButtonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestButtonHeader.swift; path = Views/RestButtonHeader.swift; sourceTree = "<group>"; };
 		4446EC2A2201C8B700B6C52F /* MainFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrame.swift; sourceTree = "<group>"; };
 		4446EC2C2201C8F600B6C52F /* EstimationCardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationCardTypes.swift; sourceTree = "<group>"; };
+		446E6008232F953900F47495 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4480A88B21FB4E6C00071136 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4480A88D21FB4F0B00071136 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		4480A89121FB5CDE00071136 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446E6009232F953900F47495 /* AudioToolbox.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -189,6 +192,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				446E6008232F953900F47495 /* AudioToolbox.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
@@ -422,13 +426,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CXMH2DVBF2;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AutentiaScrumCards_Prefix.pch;
 				INFOPLIST_FILE = "AutentiaScrumCards-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autentia.scrumcards;
 				PRODUCT_NAME = "Scrum Cards";
@@ -450,11 +455,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CXMH2DVBF2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AutentiaScrumCards_Prefix.pch;
 				INFOPLIST_FILE = "AutentiaScrumCards-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autentia.scrumcards;
 				PRODUCT_NAME = "Scrum Cards";

@@ -19,7 +19,7 @@ class MainFrame: MainFrameProtocol {
         cardViewController.cardImage = UIImage.init(named: cardImageName)
         cardViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         cardViewController.bottomText = bottomText
-        cardViewController.delegate = viewController as? CardViewSwipeProtocol
+        cardViewController.delegate = viewController as? CardViewChangeProtocol
         viewController.present(cardViewController, animated: true, completion: nil)
     }
     

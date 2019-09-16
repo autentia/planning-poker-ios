@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class CardViewController: UIViewController {
 
@@ -16,7 +17,7 @@ class CardViewController: UIViewController {
     
     var cardImage: UIImage?
     var bottomText: String?
-    var delegate: CardViewSwipeProtocol?
+    var delegate: CardViewChangeProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +37,20 @@ class CardViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            self.delegate?.shakeGestureHappened(vc: self)
+            self.makeVibrations()
+        }
     }
-    */
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    func makeVibrations() {
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+    }
 
 }

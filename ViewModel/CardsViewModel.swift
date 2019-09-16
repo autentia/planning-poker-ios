@@ -8,7 +8,6 @@
 import UIKit
 
 protocol CardsViewModelProtocol {
-    
     func getName(at index:Int) -> String
     func getImageName(at index:Int) -> String
     func getRestCardImageName() -> String
@@ -22,6 +21,7 @@ protocol CardsViewModelProtocol {
     func getNextBottomText(currentImageName: String) -> String?
     func getNextCardIndex(currentCardIndex: Int) -> Int?
     func getPreviousCardIndex(currentCardIndex: Int) -> Int?
+    func getNextRandomElementIndex() -> Int?
 }
 
 class CardsViewModel: CardsViewModelProtocol {
@@ -58,6 +58,14 @@ class CardsViewModel: CardsViewModelProtocol {
     
     func getBottomText(at index: Int) -> String? {
         return bottomTexts[self.allCards[index].name]
+    }
+    
+    func getNextRandomElementIndex() -> Int? {
+        let randomCard = self.allCards.randomElement()
+        if let randomCard = randomCard {
+            return self.allCards.firstIndex(where: {$0.name==randomCard.name})
+        }
+        return nil
     }
     
     func getNextImageName(currentImageName: String) -> String? {
